@@ -1,24 +1,26 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const int startwithgaps	     = 5;	 /* 1 means gaps are used by default */
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const int startwithgaps	    = 5;	    /* 1 means gaps are used by default */
 static const unsigned int gappx     = 10;       /* default gap between windows in pixels */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const int showbar            = 1;        /* 0 means no bar */
+static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
-static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#282828";
-static const char col_gray2[]       = "#665C54";
-static const char col_gray3[]       = "#EBDBB2";
-static const char col_gray4[]       = "#EBDBB2";
-static const char col_cyan[]        = "#CC241D";
+static const char *fonts[]          = { "monospace:size=12" };
+static const char dmenufont[]       = "monospace:size=12";
+static const char col_gray1[]       = "#000000"; // Black
+static const char col_gray2[]       = "#282828"; // Very dark gray
+static const char col_gray3[]       = "#888888"; // Medium gray
+static const char col_gray4[]       = "#bbbbbb"; // Light gray
+static const char col_cyan[]        = "#444444"; // Medium-dark gray
+
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_gray2,  col_cyan  },
+    /*               fg         bg         border   */
+    [SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+    [SchemeSel]  = { col_gray4, col_gray2, col_cyan  },
 };
+
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
