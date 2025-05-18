@@ -8,12 +8,15 @@ static const int showbar           = 1;        /* 0 means no bar */
 static const int topbar            = 1;        /* 0 means bottom bar */
 static const char *fonts[]         = { "monospace:size=10" };
 static const char dmenufont[]      = "monospace:size=10";
+
 static const char norm_bg[]        = "#282828";
 static const char norm_border[]    = "#928374";
 static const char norm_fg[]        = "#EBDBB2";
+
 static const char sel_fg[]         = "#EBDBB2";
-static const char sel_bg[]         = "#7C6F64";
+static const char sel_bg[]         = "#3C3836";
 static const char sel_border[]     = "#CC241D";
+
 static const char *colors[][3]     = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { norm_fg, norm_bg, norm_border  },
